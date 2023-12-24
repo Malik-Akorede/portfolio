@@ -31,12 +31,12 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Task Manager",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Make a GET request to fetch geonames",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com/Malik-Akorede",
+			linkText: "Task Manager",
+			link: "https://malikakorede.co.uk/task/",
 		},
 
 		{
