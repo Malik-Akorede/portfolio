@@ -1,3 +1,5 @@
+@import "../../data/styles.css";
+
 .contact-logo-container {
 	display: flex;
 	justify-content: left;
@@ -24,7 +26,6 @@
 	margin-top: 120px;
 }
 
-
 .socials-container {
 	display: flex;
 	flex-direction: column;
@@ -35,4 +36,49 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+/* Add these styles to your contact.css file */
+
+.contact-form {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea {
+	height: 150px;
+}
+
+button {
+	background-color: var(--link-color);
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--link-color);
 }

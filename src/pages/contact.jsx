@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
+import { Form, Button } from "react-bootstrap";
+
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
@@ -12,6 +14,32 @@ import SEO from "../data/seo";
 import "./styles/contact.css";
 
 const Contact = () => {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+
+	const handleInputChange = (e) => {
+		const { name, value } = e.target;
+		setFormData({
+			...formData,
+			[name]: value,
+		});
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		// You can add your email sending logic here using a service like EmailJS
+		console.log("Form submitted:", formData);
+		// Reset form fields after submission
+		setFormData({
+			name: "",
+			email: "",
+			message: "",
+		});
+	};
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -44,32 +72,51 @@ const Contact = () => {
 						</div>
 
 						<div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at
-							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
-								{INFO.main.email}
-							</a>
-							. I make an effort to respond to all messages within
-							24 hours, although it may take me longer during busy
-							periods. Alternatively, you can use the contact form
-							on my website to get in touch. Simply fill out the
-							required fields and I'll get back to you as soon as
-							possible. Finally, if you prefer to connect on
-							social media, you can find me on{" "}
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
+							<form
+								className="contact-form"
+								onSubmit={handleSubmit}
 							>
-								{INFO.socials.instagram}
-							</a>
-							. I post regular updates and engage with my
-							followers there, so don't hesitate to reach out.
-							Thanks again for your interest, and I look forward
-							to hearing from you!
+								<div className="form-group">
+									<label htmlFor="name">Your Name:</label>
+									<input
+										type="text"
+										id="name"
+										name="name"
+										value={formData.name}
+										onChange={handleInputChange}
+										required
+									/>
+								</div>
+
+								<div className="form-group">
+									<label htmlFor="email">Your Email:</label>
+									<input
+										type="email"
+										id="email"
+										name="email"
+										value={formData.email}
+										onChange={handleInputChange}
+										required
+									/>
+								</div>
+
+								<div className="form-group">
+									<label htmlFor="message">
+										Your Message:
+									</label>
+									<textarea
+										id="message"
+										name="message"
+										value={formData.message}
+										onChange={handleInputChange}
+										required
+									/>
+								</div>
+
+								<div className="form-group">
+									<button type="submit">Submit</button>
+								</div>
+							</form>
 						</div>
 					</div>
 
