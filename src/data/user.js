@@ -36,10 +36,16 @@ const INFO = {
 				"The Gazetteer Project is a mobile focus web SPA which renders geographical information on selected countries.",
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png","https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.png","https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png","https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/php/php.png"],
 			linkText: "Project Website",
-			link: "https://malikakorede.co.uk/gazetteer",
+			link: "https://malikakorede.co.uk/gazetteer/",
 			fullDetail: "The Gazetteer Project is a SPA web app using HTML, CSS, and JavaScript for the frontend, Leaflet.js for maps, and PHP for the backend. It provides country information, including population, borders, capital, currency, and flags, using OpenWeatherMap API for weather data and Pexels API for images based on user-selected locations. With a focus on UI, there are a range of customisation",
 			webView: "gazeeteerWebView.png",
-			mobileView: "gazeeteerMobileView.png"
+			mobileView: "gazeeteerMobileView.png",
+			images: {
+					"Search Filter": "img/gazetteer/img1.png",
+					"Toggle show & hide properties": "img/gazetteer/img2.png",
+					"Expand for more Info": "img/gazetteer/img3.png"
+				}
+			
 		},
 
 		{
@@ -51,7 +57,13 @@ const INFO = {
 			link: "https://github.com/Malik-Akorede/",
 			fullDetail: "My wedding invitation website was my inaugural project, and a venture that truly resonated with my passion. This Multi-Page Application (MPA) is designed to offer users a comprehensive experience, providing detailed information about the couple, the wedding invitation, a captivating gallery, and a streamlined RSVP system. Through a secure API, the website manages RSVP submissions, validating guests with a unique invitation reference. Additionally, it facilitates the collection of RSVP responses and enables guests to specify their preferred menu choices for the special day.",
 			webView: "weddingWebView.png",
-			mobileView: "weddingMobileView.png"
+			mobileView: "weddingMobileView.png",
+			images: {
+				"Home Page": "img/weddingInvitation/img1.png",
+				"About Page": "img/weddingInvitation/img2.png",
+				"Gallery Page": "img/weddingInvitation/img3.png",
+				"RSVP Page": "img/weddingInvitation/img4.png"
+			}
 		},
 
 		// {

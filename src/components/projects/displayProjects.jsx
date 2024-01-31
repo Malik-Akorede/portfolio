@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles/displayProjects.css";
 import {ProjectInfo}  from  "./project";
-import INFO from "../../data/user";
-import toggleDashboardAnimation from "./animations";
+import ControlledCarousel from "./controlledCarousel";
 
 const DisplayProjects = (props) => {
   const { project } = props;
@@ -39,6 +38,11 @@ const DisplayProjects = (props) => {
                     <img src={require(`./${project.mobileView}`)}/>
                   </div>
               </div>
+          </div>
+          <div className="projectImgSlides">
+            <ControlledCarousel
+              images={project.images}
+            />
           </div>
         </div>
       </div>
