@@ -13,13 +13,31 @@ const Works = () => {
 				title="Work"
 				body={
 					<div className="works-body">
+						{/* <div className="work">
+							<div className="work-title">Junior Front-End Developer</div>
+							<div className="work-subtitle">
+								Akovision{" "}
+							</div>
+							<div className="work-duration">
+								Apr 2023 - Present
+							</div>
+						</div> */}
+						<div className="work">
+							<div className="work-title">Business Systems Admin</div>
+							<div className="work-subtitle">
+								THE AVENUES TRUST GROUP{" "}
+							</div>
+							<div className="work-duration">
+								Jan 2022 - Jan 2023 · 1 yr
+							</div>
+						</div>
 						<div className="work">
 							<div className="work-title">AR Manager</div>
 							<div className="work-subtitle">
-								The Property Recruitment Company · Full-time{" "}
+								The Property Recruitment Company · Part Time{" "}
 							</div>
 							<div className="work-duration">
-								Apr 2022 - Present{" "}
+								Apr 2022 - Mar 2023 . 1 yr
 							</div>
 						</div>
 
@@ -29,7 +47,7 @@ const Works = () => {
 								THE AVENUES TRUST GROUP{" "}
 							</div>
 							<div className="work-duration">
-								Jun 2018 - Mar 2022 · 3 yrs 10 mos
+								Jun 2018 - Jan 2022 · 3 yrs 7 mos
 							</div>
 						</div>
 

@@ -148,3 +148,10 @@
 		margin-right: -25px;
 	}
 }
+
+
+
+.display-projects {
+	background-color: yellow;	/*Test*/
+	/* min-height: 50vh; */
+}
