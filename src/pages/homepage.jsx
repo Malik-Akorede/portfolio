@@ -24,6 +24,7 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import MyCv from "../pages/cv-Abdul-MalikAkorede.pdf";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -116,7 +117,7 @@ const Homepage = () => {
 
 						</div>
 						<div>
-							<a href="/pages/cv-Abdul-MalikAkorede.pdf" download="cv-Abdul-MalikAkorede.pdf">Download My CV</a>
+							<a href={MyCv} download="cv-Abdul-MalikAkorede.pdf"><button>Download My CV</button></a>
 						</div>
 
 						<div className="homepage-socials">
