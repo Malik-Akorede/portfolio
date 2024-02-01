@@ -11,9 +11,10 @@
 	padding-bottom: 5px;
 }
 
-.card-header {
+.card-headers {
 	display: flex;
 	/* align-items: center; */
+	
 }
 
 

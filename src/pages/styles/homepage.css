@@ -10,7 +10,6 @@
 .homepage-container {
 	padding-top: 25px;
 }
-
 .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
@@ -21,14 +20,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	
 }
 
 .homepage-title {
-	width: 85% !important;
+	width: 85% ;
 }
 
 .homepage-subtitle {
-	width: 85% !important;
+	width: 85%;
 }
 
 .homepage-first-area-right-side {
@@ -38,7 +38,6 @@
 
 .homepage-image-container {
 	width: 370px;
-	height: 370px;
 }
 
 .homepage-image-wrapper {
@@ -96,6 +95,7 @@
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
+		gap: 30px;
 	}
 
 	.homepage-first-area-left-side {
@@ -104,17 +104,18 @@
 		align-items: flex-start;
 		width: 100%;
 		order: 2;
+		padding: 20px 0 20px 0;
 	}
+	
 
 	.homepage-title {
-		width: 100% !important;
-		margin-top: 20px;
+		width: 100%;
 		order: 2;
+
 	}
 
 	.homepage-subtitle {
-		width: 100% !important;
-		margin-top: 10px;
+		width: 100%;
 		order: 3;
 	}
 
@@ -124,9 +125,6 @@
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
 		order: 1;
 	}
 
@@ -151,7 +149,4 @@
 
 
 
-.display-projects {
-	background-color: yellow;	/*Test*/
-	/* min-height: 50vh; */
-}
+
