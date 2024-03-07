@@ -43,7 +43,11 @@ const INFO = {
 			images: {
 					"Search Filter": "img/gazetteer/img1.png",
 					"Toggle show & hide properties": "img/gazetteer/img2.png",
-					"Expand for more Info": "img/gazetteer/img3.png"
+					"Currency Exchange Rate": "img/gazetteer/img3.png",
+					"Multi map overlay": "img/gazetteer/img4.jpg",
+					"Dynamic weather cards by Date, Time & weather": "img/gazetteer/img5.png",
+					"Newsletter with search feature": "img/gazetteer/img6.png",
+					"Labelled markers & marker clusters with toggle feature": "img/gazetteer/img7.jpg"
 				}
 			
 		},

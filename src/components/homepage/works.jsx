@@ -23,21 +23,30 @@ const Works = () => {
 							</div>
 						</div> */}
 						<div className="work">
+							<div className="work-title">Accounts Manager</div>
+							<div className="work-subtitle">
+								Akovision{" "}
+							</div>
+							<div className="work-duration">
+								Apr 2023 - present
+							</div>
+						</div>
+						<div className="work">
+							<div className="work-title">AR Manager</div>
+							<div className="work-subtitle">
+								The Property Recruitment Company{" "}
+							</div>
+							<div className="work-duration">
+								Apr 2022 - Mar 2023 . 1 yr
+							</div>
+						</div>
+						<div className="work">
 							<div className="work-title">Business Systems Admin</div>
 							<div className="work-subtitle">
 								THE AVENUES TRUST GROUP{" "}
 							</div>
 							<div className="work-duration">
 								Jan 2022 - Jan 2023 · 1 yr
-							</div>
-						</div>
-						<div className="work">
-							<div className="work-title">AR Manager</div>
-							<div className="work-subtitle">
-								The Property Recruitment Company · Part Time{" "}
-							</div>
-							<div className="work-duration">
-								Apr 2022 - Mar 2023 . 1 yr
 							</div>
 						</div>
 
